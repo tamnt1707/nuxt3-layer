@@ -1,0 +1,30 @@
+{
+  "name": "my-nuxt-layer",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "dev": "nuxi prepare & nuxi dev .playground",
+    "build": "nuxi build .playground",
+    "generate": "nuxi generate .playground",
+    "preview": "nuxi preview .playground",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@nuxt/image-edge": "^1.0.0-27840416.dc1ed65",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/html-validator": "^1.2.3",
+    "@nuxtjs/i18n": "^8.0.0-beta.7",
+    "@vueuse/nuxt": "^9.6.0",
+    "eslint": "^8.28.0",
+    "nuxt": "^3.0.0",
+    "nuxt-windicss": "^2.6.0",
+    "sass": "^1.56.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@vueuse/core": "^9.6.0",
+    "element-plus": "^2.2.26",
+    "pinia": "^2.0.27"
+  }
+}
