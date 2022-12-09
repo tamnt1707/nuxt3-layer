@@ -42,6 +42,35 @@ mkdir locales && echo "{}" > locales/en.json
 - Sass
 - Element Plus UI
 - Pinia
+- Auto import composables, constants, utils
+
+## Use useFetch with base url + auto add access token to headers
+
+Add url api to .env at root
+
+```env
+BASE_URL_API=https://jsonplaceholder.typicode.com
+```
+
+To automatically attach the **_access_token_** a to the header, set the value to the cookie with name **_access_token_**
+
+```typescript
+const cookie = useCookie("access_token");
+cookie.value = "value";
+```
+
+To call api with base url + access_token use composable **useApi**
+
+```typescript
+const { data, refresh } = await useApi<
+  Array<{
+    userId: number;
+    id: number;
+    title: string;
+    body: string;
+  }>
+>("/posts");
+```
 
 ## Support
 
