@@ -7,13 +7,13 @@ Nuxt 3 base layer for normal projects
 Install nuxt3-layer with npm
 
 ```bash
-  npm install @tamnt-work/nuxt3-layer
+  npm install -D @tamnt-work/nuxt3-layer
 ```
 
 Install nuxt3-layer with yarn
 
 ```bash
-  yarn add @tamnt-work/nuxt3-layer
+  yarn add -D @tamnt-work/nuxt3-layer
 ```
 
 ## Usage
@@ -29,9 +29,7 @@ export default defineNuxtConfig({
 Create locales file for i18n
 
 ```bash
-mkdir locales
-
-echo "{}" > locales/en.json
+mkdir locales && echo "{}" > locales/en.json
 ```
 
 ## Feature

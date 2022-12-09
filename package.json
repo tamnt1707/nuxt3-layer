@@ -1,8 +1,16 @@
 {
   "name": "@tamnt-work/nuxt3-layer",
   "description": "Nuxt 3 base layer for normal projects",
+  "keywords": [
+    "nuxt3",
+    "nuxt3layer",
+    "layer",
+    "vue3",
+    "nuxtjs",
+    "vuejs"
+  ],
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./nuxt.config.ts",
   "author": {
     "name": "TamNT",
