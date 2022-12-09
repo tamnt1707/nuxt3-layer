@@ -2,18 +2,26 @@
 
 Nuxt 3 base layer for normal projects
 
+## Required
+
+```bash
+yarn add -D @nuxt/image-edge @nuxtjs/html-validator @vueuse/nuxt sass
+
+yarn add nuxt-windicss
+```
+
 ## Installation
 
 Install nuxt3-layer with npm
 
 ```bash
-  npm install -D @tamnt-work/nuxt3-layer
+npm install -D @tamnt-work/nuxt3-layer
 ```
 
 Install nuxt3-layer with yarn
 
 ```bash
-  yarn add -D @tamnt-work/nuxt3-layer
+yarn add -D @tamnt-work/nuxt3-layer
 ```
 
 ## Usage
