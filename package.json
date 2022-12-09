@@ -10,7 +10,7 @@
     "vuejs"
   ],
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "./nuxt.config.ts",
   "author": {
     "name": "TamNT",
@@ -37,9 +37,11 @@
   },
   "dependencies": {
     "@intlify/vue-router-bridge": "^0.8.0",
+    "@pinia/nuxt": "^0.4.6",
     "@vueuse/core": "^9.6.0",
     "element-plus": "^2.2.26",
-    "pinia": "^2.0.27"
+    "pinia": "^2.0.27",
+    "vue-i18n": "9"
   },
   "repository": {
     "type": "git",

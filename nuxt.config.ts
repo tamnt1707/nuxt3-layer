@@ -1,18 +1,21 @@
 import { createResolver } from "@nuxt/kit";
-import fs from "fs";
-import path from "path";
 
 const { resolve } = createResolver(import.meta.url);
-
-const locales = fs
-  .readdirSync(path.join("./locales"))
-  .map((file) => file.replace(/\.json/, ""));
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: [resolve("./assets/styles/main.scss")],
 
   app: {
+    head: {
+      htmlAttrs: {
+        lang: "en",
+      },
+      charset: "utf-8",
+      title: "Nuxt3 Layer",
+      viewport: "width=device-width, initial-scale=1",
+    },
+
     pageTransition: {
       name: "page",
       mode: "out-in",
@@ -41,7 +44,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "nuxt-windicss",
     "@nuxt/image-edge",
-    "@nuxtjs/i18n",
+    "@pinia/nuxt",
     "@nuxtjs/html-validator",
   ],
 
@@ -56,20 +59,6 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       BASE_URL_API: process.env.BASE_URL_API,
-    },
-  },
-
-  i18n: {
-    vueI18n: {
-      legacy: false,
-      locale: process.env.LOCALE,
-      fallbackLocale: process.env.LOCALE,
-      messages: Object.fromEntries(
-        locales.map((locale) => [
-          locale,
-          JSON.parse(fs.readFileSync(`./locales/${locale}.json`, "utf8")),
-        ])
-      ),
     },
   },
 

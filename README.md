@@ -26,16 +26,9 @@ export default defineNuxtConfig({
 });
 ```
 
-Create locales file for i18n
-
-```bash
-mkdir locales && echo "{}" > locales/en.json
-```
-
 ## Feature
 
 - HTML validator
-- Nuxt I18n
 - Vue use
 - Windicss
 - Nuxt image
