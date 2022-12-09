@@ -1,73 +1,50 @@
-# Nuxt Layer Starter
+# Nuxt3 Layers
 
-Create Nuxt extendable layer with this GitHub template.
+Nuxt 3 base layer for normal projects
 
-## Setup
+## Installation
 
-Make sure to install the dependencies:
-
-```bash
-pnpm install
-```
-
-## Working on your theme
-
-Your theme is at the root of this repository, it is exactly like a regular Nuxt project, except you can publish it on NPM.
-
-The `.playground` directory should help you on trying your theme during development.
-
-Running `pnpm dev` will prepare and boot `.playground` directory, which imports your theme itself.
-
-## Distributing your theme
-
-Your Nuxt layer is shaped exactly the same as any other Nuxt project, except you can publish it on NPM.
-
-To do so, you only have to check if `files` in `package.json` are valid, then run:
+Install nuxt3-layer with npm
 
 ```bash
-npm publish --access public
+  npm install @tamnt-work/nuxt3-layer
 ```
 
-Once done, your users will only have to run:
+Install nuxt3-layer with yarn
 
 ```bash
-npm install --save your-theme
+  yarn add @tamnt-work/nuxt3-layer
 ```
 
-Then add the dependency to their `extends` in `nuxt.config`:
+## Usage
 
-```ts
-defineNuxtConfig({
-  extends: 'your-theme'
-})
+Add to nuxt.config.ts:
+
+```typescript
+export default defineNuxtConfig({
+  extends: ["@tamnt-work/nuxt3-layer"],
+});
 ```
 
-## Development Server
-
-Start the development server on http://localhost:3000
+Create locales file for i18n
 
 ```bash
-pnpm dev
+mkdir locales
+
+echo "{}" > locales/en.json
 ```
 
-## Production
+## Feature
 
-Build the application for production:
+- HTML validator
+- Nuxt I18n
+- Vue use
+- Windicss
+- Nuxt image
+- Sass
+- Element Plus UI
+- Pinia
 
-```bash
-pnpm build
-```
+## Support
 
-Or statically generate it with:
-
-```bash
-pnpm generate
-```
-
-Locally preview production build:
-
-```bash
-pnpm preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+For support, email contact@tamnt.work.

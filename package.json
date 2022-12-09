@@ -1,8 +1,13 @@
 {
-  "name": "my-nuxt-layer",
+  "name": "@tamnt-work/nuxt3-layer",
+  "description": "Nuxt 3 base layer for normal projects",
   "type": "module",
   "version": "0.0.1",
   "main": "./nuxt.config.ts",
+  "author": {
+    "name": "TamNT",
+    "email": "contact@tamnt.work"
+  },
   "scripts": {
     "dev": "nuxi prepare & nuxi dev .playground",
     "build": "nuxi build .playground",
@@ -23,6 +28,7 @@
     "typescript": "^4.9.3"
   },
   "dependencies": {
+    "@intlify/vue-router-bridge": "^0.8.0",
     "@vueuse/core": "^9.6.0",
     "element-plus": "^2.2.26",
     "pinia": "^2.0.27"
